@@ -7,7 +7,9 @@ while True:
         print("Thanks for using the app")
         break
     elif len(number) ==0:
-        number = input("It's blank. Please type something then hit the Enter key- or type q to quit: ")
+        number = input("Blank input! Type something- or type q to quit: ")
+    elif ' ' in number:
+        number = input("Type something that has no blank space(s)- or q to quit: ")
     else:
         count = 0
         for i in range(len(number)):
